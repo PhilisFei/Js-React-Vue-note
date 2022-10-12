@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tab</title>
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+	<div class="tab J_tab">
+		<div class="nav">
+			<div class="nav-item current">选项1</div>
+			<div class="nav-item">选项2</div>
+			<div class="nav-item">选项3</div>
+		</div>
+		<div class="page">
+			<div class="page-item current">页面1</div>
+			<div class="page-item">页面2</div>
+			<div class="page-item">页面3</div>
+		</div>
+	</div>
+	
+	<script src="utils/tools.js"></script>
+	<script src="js/index.js"></script>
+	<script type="text/javascript">
+    
+
+		var tab = new Tab({
+			el: '.J_tab',
+			classObject: {
+	    	navItem: {
+	      	origin: 'nav-item',
+	      	current: 'nav-item current'
+	      },
+	      pageItem: {
+	      	origin: 'page-item',
+	      	current: 'page-item current'
+	      }
+	    }
+		}).init();
+	</script>
+</body>
+</html>

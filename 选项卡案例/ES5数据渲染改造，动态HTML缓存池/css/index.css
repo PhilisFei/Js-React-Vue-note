@@ -1,0 +1,35 @@
+.tab {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 1px solid #000;
+}
+
+.tab .nav {
+    height: 50px;
+    border-bottom: 1px solid #000;
+}
+
+.tab .nav-item {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.tab .nav-item.current {
+    background-color: #000;
+    color: #fff;
+}
+
+.tab .page {
+    height: 450px;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.tab .page img {
+    width: 100%;
+}

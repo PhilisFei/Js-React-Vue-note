@@ -1,0 +1,105 @@
+/* header部分 */
+.header {
+    position: relative;
+    height: 5rem;
+    background-color: #333;
+    padding: 0 1.5rem;
+}
+
+.header .logo {
+    float: left;
+    color: #fff;
+    line-height: 5rem;
+}
+
+.header .header-nav {
+    float: left;
+    height: 100%;
+    margin-left: 10rem;
+}
+
+.header .nav-list {
+    height: 100%;
+}
+
+.header .nav-item {
+    float: left;
+    width: 15rem;
+}
+
+.header .nav-lk {
+    color: #eee;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.header .fa-bars {
+    display: none;
+    float: right;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+/* banner部分 */
+.banner {
+    position: relative;
+    height: 60vh;
+    background: url(../img/banner.jpg) no-repeat center/cover;
+}
+
+.banner .avatar {
+    position: absolute;
+    /* 怎么样让一个盒子排到容器的中间 */
+    top: 50%;
+    left: 50%;
+    margin: -11rem 0 0 -6.5rem;
+    width: 13rem;
+    height: 22rem;
+}
+
+.banner .avatar img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    box-shadow: .5rem .8rem 1rem #333;
+}
+
+.banner .avatar .title {
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: .1rem .3rem .5rem #000;
+}
+
+/* course部分 */
+/* 做列表的技巧 */
+.course-board {
+    width: 120rem;
+    margin: 5rem auto;
+}
+/* 注意inner的作用 */
+.course-board .inner {
+    /* 设置稍微宽一点让里面的card整体对齐,加左右两边card的paddind即可 */
+    width: 122rem;
+    margin-left: -1rem;
+}
+.course-board .course-card {
+    float: left;
+    width: 25%;
+    padding: 1rem;
+    border: .1rem solid transparent;
+}
+.course-board .course-card:hover {
+    border-color: #ddd;
+}
+
+.course-board .course-card h1 {
+    height: 4rem;
+    margin-top: .5rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+  }

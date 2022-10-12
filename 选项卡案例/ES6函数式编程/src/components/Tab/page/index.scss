@@ -1,0 +1,15 @@
+.tab {
+    .page {
+        height: 450px;
+        overflow: auto;
+
+        .content-wrapper {
+            padding: 15px;
+            box-sizing: border-box;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 响应式的关键 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/common.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 当最大屏幕宽度是1199px的时候,使用移动端样式 -->
+    <link rel="stylesheet" media="screen and (max-width: 1199px)" href="css/m.css">
+
+    <title>Responsive Layout</title>
+    
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">小野聊前端</h1>
+        <nav class="header-nav clearfix">
+            <ul class="nav-list clearfix">
+                <li class="nav-item">
+                    <a href="#" class="nav-lk">首 页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-lk">我的课程</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-lk">关于我</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="javascript:;" class="fa fa-bars"></a>
+    </header>
+    <section class="banner">
+        <div class="avatar">
+            <img src="img/avatar.jpg" alt="小野聊前端" />
+            <p class="title">小野聊前端</p>
+        </div>
+    </section>
+    <section class="course-board">
+        <div class="inner clearfix">
+            <div class="course-card">
+                <div class="course-banner">
+                    <img class="course-img" src="img/1.jpg" alt="" />
+                </div>
+                <h1>你还不会Vue自定义指令你就真的OUT的了！</h1>
+            </div>
+            <div class="course-card">
+                <div class="course-banner">
+                    <img class="course-img" src="img/2.jpg" alt="" />
+                </div>
+                <h1>Vue2与Vue3的区别你真的知道吗？</h1>
+            </div>
+            <div class="course-card">
+                <div class="course-banner">
+                    <img class="course-img" src="img/3.jpg" alt="" />
+                </div>
+                <h1>你知道怎么用VueJS Mixin混入做UI组件库吗？</h1>
+            </div>
+            <div class="course-card">
+                <div class="course-banner">
+                    <img class="course-img" src="img/4.jpg" alt="" />
+                </div>
+                <h1>Vue核心功能『过滤器filter』你真的知道在项目中怎么使用吗？</h1>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/common.js"></script>
+</body>
+
+</html>

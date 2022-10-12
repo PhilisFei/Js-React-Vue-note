@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="javascript:;">获取列表</a>
+
+    <ul></ul>
+
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+
+    <script type="text/javascript">
+        var oBtn = document.getElementsByTagName('a')[0];
+
+        oBtn.onclick = getCourses;
+
+        function getCourses(){
+            $.ajax({
+            url: '',
+            type: 'GET',
+            dataType: 'XML',
+            success: function(data){
+                var oList = document.getElementsByTagName('ul')[0];
+                var res = data.getElementsByTagName('course'),
+                    id,
+                    cname,
+                    imgurl,
+                    lk,
+                    price,
+                    list = '';
+
+                for(var i = 0; i < res.length; i++){
+                    id = res[i].getElementsByTagName('id')[0].innerHTML;
+                    cname = res[i].getElementsByTagName('cname')[0].innerHTML;
+                    imgurl = res[i].getElementsByTagName('imgurl')[0].innerHTML;
+                    lk = res[i].getElementsByTagName('lk')[0].innerHTML;
+                    price = res[i].getElementsByTagName('price')[0].innerHTML;
+
+                    list += '<li>' + cname + '</li>';
+                }
+
+                oList.innerHTML = list;
+                }
+            });
+        }
+    </script>
+</body>
+</html>

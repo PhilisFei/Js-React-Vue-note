@@ -1,0 +1,20 @@
+.tab {
+    .nav {
+
+        height: 50px;
+        border-bottom: 1px solid #000;
+
+        .nav-item {
+            float: left;
+            width: 33.33%;
+            height: 100%;
+            text-align: center;
+            line-height: 50px;
+
+            &.current {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}

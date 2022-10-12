@@ -1,0 +1,1 @@
+<div class="{{navClass}}">{{city_name}}</div>
